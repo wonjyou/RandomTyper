@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Random Text Type Effect Demo</title>
+
+        <meta name="viewport" content="width=device-width">
+		<style>
+			#hello{
+				position:fixed;
+				font-size: 6em;
+				color: #000;
+				z-index: 1000000;
+				letter-spacing: -5px;
+				line-height: 1em;
+				top:40%;
+				width:100%;
+				height: 100%;
+				left: 20px;
+				font-weight:bold;
+				opacity: 0.4;
+			}
+		</style>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+		<div id="hello"></div>
+		<h1 class="second"></h1>
+
+		<script src="js/jquery.randomTyper.js"></script>
+		<script type="text/javascript">
+			function exampleCallback(){
+				console.log("exampleCallback called");
+			}
+		
+			$(document).ready( function(){
+				var headline = "Inspired by Yugop's effect";
+				$("#hello").randomTyper({message:headline, callback: exampleCallback});				
+
+			});
+		</script>
+    </body>
+</html>
