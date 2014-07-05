@@ -1,5 +1,4 @@
 # RandomTyper
-===========
 
 A jQuery plugin to replicate Yugo Nakamura's random text animation as seen on [yugop.com](http://yugop.com)
 
