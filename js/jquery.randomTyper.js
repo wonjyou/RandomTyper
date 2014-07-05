@@ -63,7 +63,7 @@
 				this.stop();
 				this.tracker = 0;
 				var self = this;
-				this.fixer = setInterval(function(){self.correctText();}, 20);
+				this.fixer = setInterval(function(){self.correctText();}, this.speed);
 			} 
 			else {
 				this.typoText = "";
