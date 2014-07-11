@@ -24,6 +24,12 @@
 				font-weight:bold;
 				opacity: 0.4;
 			}
+			.second{
+				position:fixed;
+				top:55%;
+				left: 20px;
+				font-size: 2em;
+			}
 		</style>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -31,7 +37,7 @@
     </head>
     <body>
 		<div id="hello"></div>
-		<h1 class="second"></h1>
+		<div class="second"></div>
 
 		<script src="js/jquery.randomTyper.js"></script>
 		<script type="text/javascript">
@@ -43,6 +49,8 @@
 				var headline = "Inspired by Yugop's effect";
 				$("#hello").randomTyper({message:headline, callback: exampleCallback});				
 
+				//Example with time delay of 1.5 second
+				$(".second").randomTyper({message: "programmed by Won You", delay:1500});
 			});
 		</script>
     </body>

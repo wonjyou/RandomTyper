@@ -28,9 +28,11 @@
 				this.typoText = ""; //the output string
 				this.autostart = this.settings.autostart;
 				this.trigger = this.len * 0.75; //when to start resolving the random text to the proper characters
+				this.delay = this.settings.delay; //time delay in milliseconds if autostart is true
 				
 				if (this.autostart){		
-					this.start();
+					var self = this;						
+					setTimeout(function(){self.start();}, this.delay);
 				}
 		},
 		
@@ -162,6 +164,7 @@
 	$.fn.randomTyper.defaults = {
 			message: '', 
 			speed: 20,
+			delay: 0,
 			autostart: true,
 			callback: function(){}
 	}
